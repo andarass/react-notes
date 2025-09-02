@@ -1,42 +1,118 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.page {
+  min-height: 100vh;
+  background: white;
+  color: #111827;
+  padding: 32px 16px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  max-width: 500px;
+  min-width: 200px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .card {
-  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.read-the-docs {
-  color: #888;
+.card input,
+.card textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #D3DAD9;
+  background: #D3DAD9;
+  color: inherit;
+}
+
+.card button {
+  background: #44444E;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.notes-list {
+  display: grid;
+  gap: 12px;
+}
+
+.note-item {
+  background: #D3DAD9;
+  padding: 12px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.note-item h3 {
+  margin: 0 0 6px;
+}
+
+.note-item button {
+  background: #44444E;
+  color: white;
+  padding: 6px 10px;
+  margin: 0px 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Auth Form */
+.auth-form {
+  background: white;
+  color: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 40px auto;
+}
+.auth-form input {
+  display: flex;
+  width: 90%;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #D3DAD9;
+  background: #D3DAD9;
+  color: inherit;
+}
+
+.auth-form button {
+  background: #44444E;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.auth-form button:hover {
+  background: #44444E;
+}
+
+/* Logout */
+.logout {
+  margin: 10px 0px;
+  background: #44444E;
 }
